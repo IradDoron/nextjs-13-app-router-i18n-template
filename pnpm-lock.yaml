@@ -1,11 +1,15 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@formatjs/intl-localematcher': ^0.4.2
+  '@types/negotiator': ^0.6.1
   '@types/node': latest
   '@types/react': latest
   '@types/react-dom': latest
   eslint: latest
   eslint-config-next: latest
+  navigator: ^1.0.1
+  negotiator: ^0.6.3
   next: latest
   react: latest
   react-dom: latest
@@ -17,11 +21,15 @@ dependencies:
   react-dom: 18.2.0_react@18.2.0
 
 devDependencies:
-  '@types/node': 20.7.2
+  '@formatjs/intl-localematcher': 0.4.2
+  '@types/negotiator': 0.6.1
+  '@types/node': 20.8.0
   '@types/react': 18.2.23
   '@types/react-dom': 18.2.8
   eslint: 8.50.0
   eslint-config-next: 13.5.3_jk7qbkaijtltyu4ajmze3dfiwa
+  navigator: 1.0.1
+  negotiator: 0.6.3
   typescript: 5.2.2
 
 packages:
@@ -73,6 +81,12 @@ packages:
   /@eslint/js/8.50.0:
     resolution: {integrity: sha512-NCC3zz2+nvYd+Ckfh87rA47zfu2QsQpvc6k1yzTk+b9KzRj0wkGa8LSoGOXN6Zv4lRf/EIoZ80biDh9HOI+RNQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    dev: true
+
+  /@formatjs/intl-localematcher/0.4.2:
+    resolution: {integrity: sha512-BGdtJFmaNJy5An/Zan4OId/yR9Ih1OojFjcduX/xOvq798OgWSyDtd6Qd5jqJXwJs1ipe4Fxu9+cshic5Ox2tA==}
+    dependencies:
+      tslib: 2.6.2
     dev: true
 
   /@humanwhocodes/config-array/0.11.11:
@@ -221,8 +235,12 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
-  /@types/node/20.7.2:
-    resolution: {integrity: sha512-RcdC3hOBOauLP+r/kRt27NrByYtDjsXyAuSbR87O6xpsvi763WI+5fbSIvYJrXnt9w4RuxhV6eAXfIs7aaf/FQ==}
+  /@types/negotiator/0.6.1:
+    resolution: {integrity: sha512-c4mvXFByghezQ/eVGN5HvH/jI63vm3B7FiE81BUzDAWmuiohRecCO6ddU60dfq29oKUMiQujsoB2h0JQC7JHKA==}
+    dev: true
+
+  /@types/node/20.8.0:
+    resolution: {integrity: sha512-LzcWltT83s1bthcvjBmiBvGJiiUe84NWRHkw+ZV6Fr41z2FbIzvc815dk2nQ3RAKMuN2fkenM/z3Xv2QzEpYxQ==}
     dev: true
 
   /@types/prop-types/15.7.7:
@@ -1564,6 +1582,16 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
 
+  /navigator/1.0.1:
+    resolution: {integrity: sha512-fSy6/kUueQt6Ecr3w81rB+gWPRcf0WvzOodfV9EaYGZzCr2wk+3kwvfovMLDSxucKXBZ+jldOilWd6ZrIha4Jw==}
+    engines: {node: '>= v0.2.0'}
+    dev: true
+
+  /negotiator/0.6.3:
+    resolution: {integrity: sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==}
+    engines: {node: '>= 0.6'}
+    dev: true
+
   /next/13.5.3_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-4Nt4HRLYDW/yRpJ/QR2t1v63UOMS55A38dnWv3UDOWGezuY0ZyFO1ABNbD7mulVzs9qVhgy2+ppjdsANpKP1mg==}
     engines: {node: '>=16.14.0'}
@@ -2067,7 +2095,6 @@ packages:
 
   /tslib/2.6.2:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
-    dev: false
 
   /type-check/0.4.0:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
